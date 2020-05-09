@@ -1,5 +1,5 @@
 name: contacts
-label: 联系人
+label: Contacts
 icon: contact
 enable_files: true
 enable_search: true
@@ -10,54 +10,54 @@ enable_chatter: true
 fields:
   name:
     type: text
-    label: 姓名
+    label: Name
     required: true
     searchable: true
     index: true
   account:
-    label: 业务伙伴
+    label: Accounts
     type: master_detail
     reference_to: accounts
     sortable: true
     name: account
     filterable: true
   title:
-    label: 职务
+    label: Title
     type: text
     sortable: true
   department:
-    label: 部门
+    label: Department
     type: text
     sortable: true
   mobile:
-    label: 手机
+    label: Mobile
     type: text
   email:
-    label: 邮件
+    label: Email
     type: email
   phone:
-    label: 工作电话
+    label: Phone
     type: text
   fax:
-    label: 传真
+    label: Fax
     type: text
   home_phone:
-    label: 家庭电话
+    label: Home Phone
     type: text
   birthdate:
-    label: 生日
+    label: Birthdate
     type: date
     sortable: true
   description:
-    label: 备注
+    label: Description
     type: textarea
     is_wide: true
   mailing_address:
     type: text
-    label: 地址
+    label: Mailing Address
 list_views:
   all:
-    label: 所有联系人
+    label: All
     columns:
       - field: name
         width: 100
@@ -78,7 +78,7 @@ list_views:
       - phone
       - mailing_address
   recent:
-    label: 最近查看
+    label: Recently Viewed
     columns:
       - field: name
         width: 100
@@ -99,7 +99,7 @@ list_views:
       - phone
       - mailing_address
   mine:
-    label: 我的联系人
+    label: Mine
     columns:
       - field: name
         width: 100
