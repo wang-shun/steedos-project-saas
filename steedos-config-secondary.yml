@@ -46,6 +46,11 @@ cfs:
 email:
   from: 华炎云 <noreply@steedos.com>
   url: xxx
+sms:
+  qcloud:
+    sdkappid: ${ENV_SMS_QCLOUD_SDKAPPID}
+    appkey: ${ENV_SMS_QCLOUD_APPKEY}
+    signname: ${ENV_SMS_QCLOUD_SIGNNAME}
 logger:
   enabled: true
   showPackage: true
