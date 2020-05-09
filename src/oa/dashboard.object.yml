@@ -1,5 +1,5 @@
 name: oa_home
-label: 首页
+label: Home
 icon: home
 fields:
   name:
