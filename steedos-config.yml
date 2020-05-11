@@ -65,7 +65,7 @@ push:
     appSecret: ${ENV_PUSH_MI_APPSECRET}
     production: ${ENV_PUSH_MI_PRODUCTION}
 email:
-  from: 华炎魔方 <noreply@steedos.com>
+  from: 华炎云 <noreply@steedos.com>
   url: xxx
 logger:
   enabled: true
