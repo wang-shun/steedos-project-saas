@@ -41,8 +41,13 @@ cfs:
   worker:
     enabled: true
 cron:
+  statistics: 0 0 0 * * *
+  mailqueue_interval: 1000
+  # push_interval: 1000
+  # calendar_dav_interval: 30000
+  # calendar_remind: 60000
+  # webhookqueue_interval: 1000
   instancerecordqueue_interval: 10000
-  -push_interval: 1000
 push:
   apn:
     keyData: ${ENV_PUSH_APN_DATA}
@@ -76,10 +81,12 @@ plugins:
   - "@steedos/accounts"
 tenant:
   saas: true
-  enable_password_login: true
   name: 华炎云
-  enable_mobile_code_login: true
-  disable_email_register: true
-  enable_bind_mobile: true
+  enable_register: true
+  enable_forget_password: true
+  enable_create_tenant: true
+  enable_password_login: true
+  enable_bind_email: true
+  enable_bind_mobile: false
 accounts:
   mobile_phone_locales: ['zh-CN']
