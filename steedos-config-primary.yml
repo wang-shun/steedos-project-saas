@@ -13,11 +13,11 @@ public:
       url: "https://www.steedos.com:443"
     creator:
       status: active
-      url: ${ENV_CREATOR_URL}
+      url: ${STEEDOS_CREATOR_URL}
   cfs:
-    store: ${ENV_CFS_STORE}
+    store: ${STEEDOS_CFS_STORE}
     local:
-      folder: ${ENV_STORAGE_DIR}
+      folder: ${STEEDOS_STORAGE_DIR}
   admin:
     disableAddSpace: false
   accounts:
@@ -31,26 +31,26 @@ public:
   is_group_company: true
 push:
   apn:
-    keyData: ${ENV_PUSH_APN_DATA}
-    certData: ${ENV_PUSH_APN_DATA}
+    keyData: ${STEEDOS_PUSH_APN_DATA}
+    certData: ${STEEDOS_PUSH_APN_DATA}
   gcm:
     apiKey: xxx
   xinge:
-    accessId: ${ENV_PUSH_XINGE_ACCESSID}
-    secretKey: ${ENV_PUSH_XINGE_SECRETKEY}
+    accessId: ${STEEDOS_PUSH_XINGE_ACCESSID}
+    secretKey: ${STEEDOS_PUSH_XINGE_SECRETKEY}
   huawei:
-    appId: ${ENV_PUSH_HUAWEI_APPID}
-    appSecret: ${ENV_PUSH_HUAWEI_APPSECRET}
-    appPkgName: ${ENV_PUSH_HUAWEI_APPPKGNAME}
+    appId: ${STEEDOS_PUSH_HUAWEI_APPID}
+    appSecret: ${STEEDOS_PUSH_HUAWEI_APPSECRET}
+    appPkgName: ${STEEDOS_PUSH_HUAWEI_APPPKGNAME}
   mi:
-    appSecret: ${ENV_PUSH_MI_APPSECRET}
-    production: ${ENV_PUSH_MI_PRODUCTION}
+    appSecret: ${STEEDOS_PUSH_MI_APPSECRET}
+    production: ${STEEDOS_PUSH_MI_PRODUCTION}
 cfs:
   aliyun:
-    region: ${ENV_CFS_ALIYUN_REGION}
-    bucket: ${ENV_CFS_ALIYUN_BUCKET}
-    accessKeyId: ${ENV_CFS_ALIYUN_ACCESSKEYID}
-    secretAccessKey: ${ENV_CFS_ALIYUN_SECRETACCESSKEY}
+    region: ${STEEDOS_CFS_ALIYUN_REGION}
+    bucket: ${STEEDOS_CFS_ALIYUN_BUCKET}
+    accessKeyId: ${STEEDOS_CFS_ALIYUN_ACCESSKEYID}
+    secretAccessKey: ${STEEDOS_CFS_ALIYUN_SECRETACCESSKEY}
   worker:
     enabled: true
 cron:
@@ -67,9 +67,9 @@ email:
 sms:
   qcloud:
     smsqueue_interval: 1000
-    sdkappid: ${ENV_SMS_QCLOUD_SDKAPPID}
-    appkey: ${ENV_SMS_QCLOUD_APPKEY}
-    signname: ${ENV_SMS_QCLOUD_SIGNNAME}
+    sdkappid: ${STEEDOS_SMS_QCLOUD_SDKAPPID}
+    appkey: ${STEEDOS_SMS_QCLOUD_APPKEY}
+    signname: ${STEEDOS_SMS_QCLOUD_SIGNNAME}
 logger:
   enabled: true
   showPackage: true
@@ -77,9 +77,9 @@ logger:
   logLevel: 0
   viewLimit: 1000
 billing:
-  appid: ${ENV_BILLING_APPID}
-  mch_id: ${ENV_BILLING_MCH_ID}
-  partner_key: ${ENV_BILLING_PARTNER_KEY}
+  appid: ${STEEDOS_BILLING_APPID}
+  mch_id: ${STEEDOS_BILLING_MCH_ID}
+  partner_key: ${STEEDOS_BILLING_PARTNER_KEY}
 qiyeweixin:
   sync_interval: 600000
   authorize_uri: "https://open.weixin.qq.com/connect/oauth2/authorize"

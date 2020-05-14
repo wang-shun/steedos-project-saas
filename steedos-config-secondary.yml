@@ -13,14 +13,14 @@ public:
       url: 'https://www.steedos.com:443'
     creator:
       status: active
-      url: ${ENV_CREATOR_URL}
+      url: ${STEEDOS_CREATOR_URL}
     workflow:
       status: active
-      url: ${ENV_WORKFLOW_URL}
+      url: ${STEEDOS_WORKFLOW_URL}
   cfs:
-    store: ${ENV_CFS_STORE}
+    store: ${STEEDOS_CFS_STORE}
     local:
-      folder: ${ENV_STORAGE_DIR}
+      folder: ${STEEDOS_STORAGE_DIR}
   admin:
     disableAddSpace: false
   accounts:
@@ -37,10 +37,10 @@ public:
     instance_allow_distribute: true
 cfs:
   aliyun:
-    region: ${ENV_CFS_ALIYUN_REGION}
-    bucket: ${ENV_CFS_ALIYUN_BUCKET}
-    accessKeyId: ${ENV_CFS_ALIYUN_ACCESSKEYID}
-    secretAccessKey: ${ENV_CFS_ALIYUN_SECRETACCESSKEY}
+    region: ${STEEDOS_CFS_ALIYUN_REGION}
+    bucket: ${STEEDOS_CFS_ALIYUN_BUCKET}
+    accessKeyId: ${STEEDOS_CFS_ALIYUN_ACCESSKEYID}
+    secretAccessKey: ${STEEDOS_CFS_ALIYUN_SECRETACCESSKEY}
   worker:
     enabled: true
 email:
@@ -48,9 +48,9 @@ email:
   url: xxx
 sms:
   qcloud:
-    sdkappid: ${ENV_SMS_QCLOUD_SDKAPPID}
-    appkey: ${ENV_SMS_QCLOUD_APPKEY}
-    signname: ${ENV_SMS_QCLOUD_SIGNNAME}
+    sdkappid: ${STEEDOS_SMS_QCLOUD_SDKAPPID}
+    appkey: ${STEEDOS_SMS_QCLOUD_APPKEY}
+    signname: ${STEEDOS_SMS_QCLOUD_SIGNNAME}
 logger:
   enabled: true
   showPackage: true
@@ -58,9 +58,9 @@ logger:
   logLevel: 0
   viewLimit: 1000
 billing:
-  appid: ${ENV_BILLING_APPID}
-  mch_id: ${ENV_BILLING_MCH_ID}
-  partner_key: ${ENV_BILLING_PARTNER_KEY}
+  appid: ${STEEDOS_BILLING_APPID}
+  mch_id: ${STEEDOS_BILLING_MCH_ID}
+  partner_key: ${STEEDOS_BILLING_PARTNER_KEY}
 qiyeweixin:
   '-sync_interval': 600000
   authorize_uri: 'https://open.weixin.qq.com/connect/oauth2/authorize'
@@ -87,6 +87,6 @@ tenant:
   disable_email_register: true
   enable_bind_mobile: true
 webservices:
-  steedos: ${ENV_CREATOR_URL}
+  steedos: ${STEEDOS_CREATOR_URL}
 accounts:
   mobile_phone_locales: ['zh-CN']
