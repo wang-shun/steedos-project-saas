@@ -14,7 +14,6 @@ fields:
     label: 付款说明
     type: textarea
     is_wide: true
-    name: description
     rows: 2
   amount:
     label: 付款金额
