@@ -20,7 +20,7 @@
         "@steedos/steedos-plugin-workflow": "^2.0.8",
         "aliyun-sdk": "1.12.3",
         "dotenv-flow": "^3.1.0",
-        "steedos-server": "^1.20.7",
+        "steedos-server": "^1.21.0-alpha.2",
         "xiaomi-push": "1.0.0"
     },
     "devDependencies": {
